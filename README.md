@@ -1,5 +1,5 @@
 # QBypass-TryHackMe
-
+### Walkthrough :
 Upon deploying the machine, we immediately can navigate to the provided IP address, where we are greeted with a login page asking for credentials we don't currently have. Attempts with the commonly-used 'admin:admin' credentials were unsuccessful. when seeing the source of the 'invalid credentials', a comment inside it reveals a sensitive imformation about the query in the back-end.
 
 Next, we opted for a directory brute-force approach, employing gobuster and tapping into the built-in wordlists found at ( /usr/share/wordlist ). This led us to a directory named "notes." This directory gave us another hint about at a vulnerability within the login page that demanded swift rectification.
